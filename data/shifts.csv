@@ -1,0 +1,348 @@
+shift,signOn1,signOff1,signOn2,signOff2,mealLocation,mealStart,mealFinish,mealDuration
+SS01,04:00,12:30,none,none,none,none,none,none
+SS03,04:15,12:45,none,none,none,none,none,none
+SS05,04:30,13:00,none,none,none,none,none,none
+SS07,04:45,13:15,none,none,none,none,none,none
+SS09,05:00,13:30,none,none,none,none,none,none
+SS11,05:15,13:45,none,none,none,none,none,none
+SS13,05:30,14:00,none,none,none,none,none,none
+SS15,05:45,14:15,none,none,none,none,none,none
+SS17,06:00,14:30,none,none,none,none,none,none
+SS19,06:15,14:45,none,none,none,none,none,none
+SS21,06:30,15:00,none,none,none,none,none,none
+SS23,06:45,15:15,none,none,none,none,none,none
+SS25,07:00,15:30,none,none,none,none,none,none
+SS27,07:15,15:45,none,none,none,none,none,none
+SS29,07:30,16:00,none,none,none,none,none,none
+SS31,07:45,16:15,none,none,none,none,none,none
+SS33,08:00,16:30,none,none,none,none,none,none
+SS35,08:15,16:45,none,none,none,none,none,none
+SS37,08:30,17:00,none,none,none,none,none,none
+SS39,08:45,17:15,none,none,none,none,none,none
+SS41,09:00,17:30,none,none,none,none,none,none
+SS43,09:15,17:45,none,none,none,none,none,none
+SS45,09:30,18:00,none,none,none,none,none,none
+SS47,09:45,18:15,none,none,none,none,none,none
+SS02,09:00,17:30,none,none,none,none,none,none
+SS04,09:15,17:45,none,none,none,none,none,none
+SS06,09:30,18:00,none,none,none,none,none,none
+SS08,09:45,18:15,none,none,none,none,none,none
+SS10,10:00,18:30,none,none,none,none,none,none
+SS12,10:30,19:00,none,none,none,none,none,none
+SS14,11:00,19:30,none,none,none,none,none,none
+SS16,11:30,20:00,none,none,none,none,none,none
+SS18,12:00,20:30,none,none,none,none,none,none
+SS20,12:30,21:00,none,none,none,none,none,none
+SS22,13:00,21:30,none,none,none,none,none,none
+SS24,13:30,22:00,none,none,none,none,none,none
+SS26,14:00,22:30,none,none,none,none,none,none
+SS28,14:30,23:00,none,none,none,none,none,none
+SS30,15:00,23:30,none,none,none,none,none,none
+SS32,15:15,23:45,none,none,none,none,none,none
+SS34,15:30,00:00,none,none,none,none,none,none
+SS36,15:45,00:15,none,none,none,none,none,none
+SS38,16:00,00:30,none,none,none,none,none,none
+SS40,16:15,00:45,none,none,none,none,none,none
+SS42,16:30,01:00,none,none,none,none,none,none
+SS44,16:45,01:15,none,none,none,none,none,none
+SS46,17:00,01:30,none,none,none,none,none,none
+SS48,17:15,01:45,none,none,none,none,none,none
+SS50,17:30,02:00,none,none,none,none,none,none
+BS01,05:00,09:00,13:00,17:00,none,none,none,none
+BS02,05:10,09:10,13:10,17:10,none,none,none,none
+BS03,05:20,09:20,13:20,17:20,none,none,none,none
+BS04,05:30,09:30,13:30,17:30,none,none,none,none
+BS05,05:40,09:40,13:40,17:40,none,none,none,none
+BS06,05:50,09:50,13:50,17:50,none,none,none,none
+BS07,06:00,10:00,14:00,18:00,none,none,none,none
+BS08,06:10,10:10,14:10,18:10,none,none,none,none
+BS09,06:20,10:20,14:20,18:20,none,none,none,none
+BS10,06:30,10:30,14:30,18:30,none,none,none,none
+BS11,06:40,10:40,14:40,18:40,none,none,none,none
+BS12,06:50,10:50,14:50,18:50,none,none,none,none
+BS13,07:00,11:00,15:00,19:00,none,none,none,none
+BS14,07:10,11:10,15:10,19:10,none,none,none,none
+BS15,07:20,11:20,15:20,19:20,none,none,none,none
+BS16,07:30,11:30,15:30,19:30,none,none,none,none
+BS17,07:40,11:40,15:40,19:40,none,none,none,none
+BS18,07:50,11:50,15:45,19:45,none,none,none,none
+BS19,08:00,12:00,15:45,19:45,none,none,none,none
+BS20,08:15,12:15,15:45,19:45,none,none,none,none
+BS21,08:30,12:30,15:45,19:45,none,none,none,none
+BS22,09:00,13:00,15:45,19:45,none,none,none,none
+BS23,10:00,14:00,15:45,19:45,none,none,none,none
+PTSS31,05:00,09:00,none,none,none,none,none,none
+PTSS33,05:30,09:30,none,none,none,none,none,none
+PTSS35,05:45,09:45,none,none,none,none,none,none
+PTSS37,06:00,10:00,none,none,none,none,none,none
+PTSS39,06:15,10:15,none,none,none,none,none,none
+PTSS41,06:30,10:30,none,none,none,none,none,none
+PTSS43,06:45,10:45,none,none,none,none,none,none
+PTSS45,07:00,11:00,none,none,none,none,none,none
+PTSS47,07:00,11:00,none,none,none,none,none,none
+PTSS49,07:15,11:15,none,none,none,none,none,none
+PTSS51,07:30,11:30,none,none,none,none,none,none
+PTSS30,10:00,14:00,none,none,none,none,none,none
+PTSS32,11:00,15:00,none,none,none,none,none,none
+PTSS34,12:00,16:00,none,none,none,none,none,none
+PTSS36,13:00,17:00,none,none,none,none,none,none
+PTSS38,13:30,17:30,none,none,none,none,none,none
+PTSS40,14:00,18:00,none,none,none,none,none,none
+PTSS42,14:30,18:30,none,none,none,none,none,none
+PTSS44,15:00,19:00,none,none,none,none,none,none
+PTSS46,15:30,19:30,none,none,none,none,none,none
+PTSS48,16:00,20:00,none,none,none,none,none,none
+PTBS31,07:17,09:12,13:41,16:19,none,none,none,none
+PTSS53,06:00,09:00,none,none,none,none,none,none
+PTSS55,06:30,09:00,none,none,none,none,none,none
+PTSS57,07:00,09:00,none,none,none,none,none,none
+PTSS50,11:00,16:00,none,none,none,none,none,none
+PTSS52,11:15,17:15,none,none,none,none,none,none
+T26301H,05:30,15:10,none,none,Tauranga CBD,10:50,11:24,34 minutes
+T26302H,09:39,19:27,none,none,Tauranga CBD,14:22,14:59,37 minutes
+T26303H,05:34,14:31,none,none,Tauranga CBD,08:44,09:14,30 minutes
+T26304H,09:44,19:36,none,none,Tauranga CBD,14:34,15:04,30 minutes
+T26305H,05:34,15:25,none,none,Tauranga CBD,10:24,11:08,44 minutes
+T26306H,10:08,20:08,none,none,Tauranga CBD,14:21,14:59,38 minutes
+T26307H,05:45,15:14,none,none,Tauranga CBD,09:21,09:59,38 minutes
+T26308H,10:21,20:21,none,none,Tauranga CBD,15:35,16:19,44 minutes
+T26309H,05:46,14:44,none,none,Tauranga CBD,08:47,09:29,42 minutes
+T26310H,10:24,20:24,none,none,Tauranga CBD,14:47,15:24,37 minutes
+T26311H,05:52,15:50,none,none,Tauranga CBD,09:59,10:39,40 minutes
+T26312H,10:51,20:48,none,none,Tauranga CBD,14:59,15:59,60 minutes
+T26313H,05:58,15:57,none,none,Tauranga CBD,09:51,10:38,47 minutes
+T26314H,10:59,20:55,none,none,Tauranga CBD,15:06,15:38,32 minutes
+T26315H,06:00,15:41,none,none,Tauranga CBD,11:20,12:00,40 minutes
+T26316H,11:08,21:05,none,none,Tauranga CBD,16:21,16:59,38 minutes
+T26317H,06:00,15:59,none,none,Greerton Depot,10:05,10:39,34 minutes
+T26318H,11:14,21:02,none,none,Tauranga CBD,16:24,16:59,35 minutes
+T26319H,06:17,15:58,none,none,Tauranga CBD,10:24,11:00,36 minutes
+T26320H,11:14,21:14,none,none,Tauranga CBD,15:58,16:44,46 minutes
+T26321H,06:10,16:00,none,none,Tauranga CBD,11:05,11:59,54 minutes
+T26322H,11:19,21:09,none,none,Tauranga CBD,16:36,17:36,60 minutes
+T26323H,06:16,16:11,none,none,Tauranga CBD,11:36,12:14,38 minutes
+T26324H,11:21,21:18,none,none,Tauranga CBD,15:51,16:29,38 minutes
+T26325H,06:38,16:36,none,none,Tauranga CBD,10:44,11:19,35 minutes
+T26326H,11:34,21:30,none,none,Tauranga CBD,16:22,17:00,38 minutes
+T26327H,06:38,16:38,none,none,Tauranga CBD,11:51,12:24,33 minutes
+T26328H,11:38,21:29,none,none,Tauranga CBD,16:58,17:39,41 minutes
+T26329H,06:42,16:41,none,none,Tauranga CBD,11:58,12:34,36 minutes
+T26330H,11:39,21:35,none,none,Tauranga CBD,16:50,17:29,39 minutes
+T26332H,11:59,21:44,none,none,Tauranga CBD,16:35,17:19,44 minutes
+T26334H,12:04,21:55,none,none,Tauranga CBD,17:21,18:04,43 minutes
+T26336H,12:09,21:48,none,none,Tauranga CBD,16:05,16:43,38 minutes
+T26338H,12:34,22:25,none,none,Tauranga CBD,16:59,17:44,45 minutes
+T26501H,05:40,10:39,13:54,18:33,none,none,none,none
+T26502H,05:42,09:46,13:09,18:06,none,none,none,none
+T26503H,05:47,10:24,13:18,18:38,none,none,none,none
+T26504H,05:53,11:03,13:39,18:28,none,none,none,none
+T26505H,06:01,11:05,13:51,18:41,none,none,none,none
+T26506H,06:14,11:33,14:40,19:14,none,none,none,none
+T26507H,06:16,11:09,14:04,19:08,none,none,none,none
+T26508H,06:30,11:24,14:34,19:26,none,none,none,none
+T26509H,06:32,11:51,14:38,19:12,none,none,none,none
+T26510H,06:40,11:39,15:09,19:38,none,none,none,none
+T26511H,06:44,11:54,14:24,19:10,none,none,none,none
+T26512H,06:45,12:03,15:19,19:38,none,none,none,none
+T26513H,06:56,12:16,15:38,19:52,none,none,none,none
+T26514H,06:57,12:05,14:59,19:50,none,none,none,none
+T26515H,06:59,12:10,15:19,19:57,none,none,none,none
+T26516H,07:16,12:09,15:04,20:10,none,none,none,none
+T26517H,07:33,12:36,15:21,20:18,none,none,none,none
+T26518H,07:41,12:52,15:59,20:40,none,none,none,none
+T26519H,08:01,12:22,15:24,20:44,none,none,none,none
+T26520H,08:51,13:53,16:19,20:54,none,none,none,none
+T26521H,08:59,14:13,16:13,20:35,none,none,none,none
+T26522H,09:09,14:11,15:59,20:57,none,none,none,none
+T28301H,05:29,15:14,none,none,Tauranga CBD,09:38,10:19,41 minutes
+T28302H,10:29,20:27,none,none,Tauranga CBD,14:38,15:14,36 minutes
+T28303H,05:41,14:57,none,none,Tauranga CBD,09:11,10:04,53 minutes
+T28304H,11:29,21:27,none,none,Tauranga CBD,15:24,16:24,60 minutes
+T28305H,05:59,15:59,none,none,Tauranga CBD,10:29,10:59,30 minutes
+T28306H,11:45,21:10,none,none,Tauranga CBD,15:54,16:24,30 minutes
+T28307H,06:14,15:46,none,none,Tauranga CBD,10:41,11:29,48 minutes
+T28309H,06:29,16:26,none,none,Tauranga CBD,10:59,11:29,30 minutes
+T28311H,06:39,16:36,none,none,Tauranga CBD,11:18,11:49,31 minutes
+T28313H,07:09,17:02,none,none,Tauranga CBD,11:38,12:29,51 minutes
+T28315H,08:23,18:02,none,none,Tauranga CBD,13:21,13:59,38 minutes
+T28501H,05:41,10:38,13:45,17:39,none,none,none,none
+T28502H,06:11,11:01,14:11,18:59,none,none,none,none
+T28503H,06:41,12:01,14:52,19:06,none,none,none,none
+T28504H,06:44,11:41,14:56,19:40,none,none,none,none
+T28505H,06:48,11:08,14:45,19:45,none,none,none,none
+T28506H,06:59,11:49,14:58,19:57,none,none,none,none
+T28507H,07:29,12:09,15:01,20:10,none,none,none,none
+T28508H,08:45,13:09,15:59,20:57,none,none,none,none
+T26301T,05:34,14:10,none,none,Tauranga CBD,10:36,11:08,32 minutes
+T26302T,10:34,19:52,none,none,Tauranga CBD,14:21,14:59,38 minutes
+T26303T,05:40,15:06,none,none,Greerton Depot,09:13,10:13,60 minutes
+T26304T,10:38,20:35,none,none,Tauranga CBD,15:56,16:44,48 minutes
+T26305T,05:34,14:24,none,none,Greerton Depot,09:01,09:44,43 minutes
+T26306T,10:39,19:44,none,none,Tauranga CBD,13:44,14:24,40 minutes
+T26307T,05:42,15:14,none,none,Tauranga CBD,09:21,09:59,38 minutes
+T26308T,10:44,20:40,none,none,Tauranga CBD,14:38,15:24,46 minutes
+T26309T,05:45,14:44,none,none,Tauranga CBD,08:36,09:33,57 minutes
+T26310T,10:51,20:44,none,none,Tauranga CBD,14:51,15:24,33 minutes
+T26311T,05:53,14:56,none,none,Tauranga CBD,09:59,10:29,30 minutes
+T26312T,10:59,20:48,none,none,Tauranga CBD,15:06,15:44,38 minutes
+T26313T,05:58,15:43,none,none,Tauranga CBD,11:06,11:38,32 minutes
+T26314T,11:05,20:54,none,none,Tauranga CBD,16:20,17:04,44 minutes
+T26315T,06:00,15:56,none,none,Tauranga CBD,11:11,11:44,33 minutes
+T26316T,11:08,21:08,none,none,Tauranga CBD,15:21,16:04,43 minutes
+T26317T,06:02,15:57,none,none,Tauranga CBD,09:58,10:49,51 minutes
+T26318T,11:09,21:02,none,none,Tauranga CBD,16:06,16:59,53 minutes
+T26319T,06:14,15:11,none,none,Tauranga CBD,09:44,10:24,40 minutes
+T26320T,11:09,21:09,none,none,Tauranga CBD,15:29,15:59,30 minutes
+T26321T,06:19,16:14,none,none,Tauranga CBD,10:54,11:24,30 minutes
+T26322T,11:19,21:14,none,none,Tauranga CBD,16:22,16:59,37 minutes
+T26323T,06:39,16:23,none,none,Tauranga CBD,11:51,12:38,47 minutes
+T26324T,11:19,21:18,none,none,Tauranga CBD,15:39,16:24,45 minutes
+T26325T,06:45,16:33,none,none,Tauranga CBD,10:35,11:19,44 minutes
+T26326T,11:34,21:25,none,none,Tauranga CBD,15:54,16:24,30 minutes
+T26327T,06:55,16:49,none,none,Tauranga CBD,12:11,13:04,53 minutes
+T26328T,11:38,21:30,none,none,Tauranga CBD,16:31,17:04,33 minutes
+T26329T,06:56,16:46,none,none,Tauranga CBD,11:50,12:29,39 minutes
+T26330T,11:39,21:29,none,none,Tauranga CBD,16:50,17:29,39 minutes
+T26331T,06:59,16:44,none,none,Tauranga CBD,11:29,11:59,30 minutes
+T26332T,11:51,21:35,none,none,Tauranga CBD,16:58,17:29,31 minutes
+T26333T,06:59,16:59,none,none,Tauranga CBD,11:36,12:29,53 minutes
+T26334T,11:59,21:55,none,none,Tauranga CBD,16:51,17:37,46 minutes
+T26335T,07:09,16:56,none,none,Tauranga CBD,11:31,12:19,48 minutes
+T26336T,12:19,21:44,none,none,Tauranga CBD,17:36,18:29,53 minutes
+T26338T,13:10,21:48,none,none,Tauranga CBD,18:05,18:43,38 minutes
+T26340T,13:34,22:25,none,none,Tauranga CBD,18:34,19:19,45 minutes
+T26501T,06:01,10:39,14:34,18:28,none,none,none,none
+T26502T,05:46,10:38,13:38,18:41,none,none,none,none
+T26503T,06:16,09:26,13:24,18:18,none,none,none,none
+T26504T,05:52,10:05,13:35,18:41,none,none,none,none
+T26505T,06:00,11:09,14:09,18:49,none,none,none,none
+T26506T,06:10,10:33,14:24,19:06,none,none,none,none
+T26507T,06:16,11:36,14:44,19:08,none,none,none,none
+T26508T,06:27,11:21,14:44,18:57,none,none,none,none
+T26509T,06:27,10:07,14:04,19:20,none,none,none,none
+T26510T,06:32,11:37,14:38,19:31,none,none,none,none
+T26511T,06:35,11:25,13:59,18:38,none,none,none,none
+T26512T,06:38,11:39,14:40,19:36,none,none,none,none
+T26513T,06:38,11:05,15:05,19:38,none,none,none,none
+T26514T,06:42,11:56,14:59,19:37,none,none,none,none
+T26515T,06:44,11:53,14:38,19:27,none,none,none,none
+T26516T,06:51,11:55,14:38,19:51,none,none,none,none
+T26517T,06:57,11:24,15:04,19:57,none,none,none,none
+T26518T,07:01,12:09,15:09,20:01,none,none,none,none
+T26519T,07:07,11:49,14:44,19:58,none,none,none,none
+T26520T,07:08,12:03,15:04,20:08,none,none,none,none
+T26521T,07:11,12:24,15:44,20:10,none,none,none,none
+T26522T,07:17,12:13,15:06,20:07,none,none,none,none
+T26523T,07:20,12:33,16:08,20:18,none,none,none,none
+T26524T,07:33,12:51,16:09,20:24,none,none,none,none
+T26525T,09:09,13:53,16:21,20:55,none,none,none,none
+T26601T,05:30,09:30,none,none,none,none,none,none
+T26901T,05:47,08:53,12:04,17:03,none,none,none,none
+T28301T,05:41,14:57,none,none,Tauranga CBD,10:04,11:00,56 minutes
+T28302T,11:29,21:27,none,none,Tauranga CBD,15:38,16:19,41 minutes
+T28303T,06:11,15:53,none,none,Tauranga CBD,10:51,11:24,33 minutes
+T28304T,11:45,21:10,none,none,Tauranga CBD,16:59,17:44,45 minutes
+T28305T,06:14,16:13,none,none,Tauranga CBD,11:18,11:49,31 minutes
+T28307T,06:29,16:27,none,none,Tauranga CBD,10:59,11:34,35 minutes
+T28309T,06:39,16:16,none,none,Tauranga CBD,10:06,11:04,58 minutes
+T28311T,06:41,16:36,none,none,Tauranga CBD,10:29,11:19,50 minutes
+T28313T,07:04,16:26,none,none,Tauranga CBD,12:20,13:06,46 minutes
+T28315T,07:16,16:57,none,none,Tauranga CBD,12:05,12:59,54 minutes
+T28317T,07:20,17:02,none,none,Tauranga CBD,12:29,13:04,35 minutes
+T28400T,07:25,08:53,14:05,15:59,none,none,none,none
+T28401T,07:29,08:53,14:05,15:53,none,none,none,none
+T28402T,07:32,08:43,14:20,16:08,none,none,none,none
+T28403T,07:32,08:43,14:20,16:08,none,none,none,none
+T28404T,07:32,08:43,14:20,16:08,none,none,none,none
+T28405T,07:37,08:48,14:05,15:53,none,none,none,none
+T28501T,05:29,10:01,13:41,18:02,none,none,none,none
+T28502T,05:59,10:39,13:59,18:42,none,none,none,none
+T28503T,06:44,11:41,14:50,19:40,none,none,none,none
+T28504T,06:59,12:01,14:56,19:45,none,none,none,none
+T28505T,07:27,12:41,16:07,20:27,none,none,none,none
+T28506T,07:28,12:11,14:52,19:57,none,none,none,none
+T28507T,07:29,12:09,14:51,20:10,none,none,none,none
+T27301T,06:24,08:47,14:28,16:56,none,none,none,none
+T27303T,06:55,08:37,14:28,16:45,none,none,none,none
+T27305T,06:59,08:46,14:23,16:11,none,none,none,none
+T27307T,07:04,08:37,14:28,16:51,none,none,none,none
+T27309T,07:04,08:37,14:28,16:51,none,none,none,none
+T27311T,07:09,08:40,14:29,16:26,none,none,none,none
+T27313T,07:10,08:37,14:28,16:25,none,none,none,none
+T27315T,07:11,08:40,14:29,16:19,none,none,none,none
+T27317T,07:11,08:40,14:29,16:19,none,none,none,none
+T27319T,07:11,08:53,14:42,16:38,none,none,none,none
+T27321T,07:14,08:42,14:20,16:27,none,none,none,none
+T27323T,07:15,08:36,14:34,16:10,none,none,none,none
+T27325T,07:17,09:12,13:41,16:19,none,none,none,none
+T27327T,07:18,08:40,14:29,16:29,none,none,none,none
+T27329T,07:20,08:38,14:34,16:33,none,none,none,none
+T27331T,07:20,08:38,14:34,16:33,none,none,none,none
+T27333T,07:20,08:47,14:25,16:50,none,none,none,none
+T27335T,07:22,08:37,14:28,16:15,none,none,none,none
+T27337T,07:23,09:01,14:25,16:14,none,none,none,none
+T27339T,07:24,08:36,14:34,16:14,none,none,none,none
+T27341T,07:25,08:45,14:39,16:16,none,none,none,none
+T27343T,07:25,08:36,14:33,16:33,none,none,none,none
+T27345T,07:28,08:33,14:33,16:31,none,none,none,none
+T27347T,07:29,08:35,14:35,16:31,none,none,none,none
+T27349T,07:30,08:58,14:43,16:43,none,none,none,none
+T27351T,07:34,08:40,13:41,16:16,none,none,none,none
+T27353T,07:39,08:46,14:38,16:20,none,none,none,none
+T27355T,13:44,17:44,none,none,none,none,none,none
+T27357T,07:39,08:55,14:39,16:10,none,none,none,none
+T27359T,07:25,09:08,15:07,16:33,none,none,none,none
+T27361T,07:31,09:20,14:17,16:41,none,none,none,none
+T27362T,07:07,09:52,13:57,16:07,none,none,none,none
+T27363T,12:41,16:41,none,none,none,none,none,none
+T27364T,12:10,16:10,none,none,none,none,none,none
+T27365T,12:30,16:38,none,none,none,none,none,none
+T26701,05:37,15:37,none,none,Tauranga CBD,09:55,10:34,39 minutes
+T26702,09:10,20:25,none,none,Tauranga CBD,14:09,14:59,50 minutes
+T26703,05:47,15:51,none,none,Greerton Depot,10:20,11:01,41 minutes
+T26704,09:34,20:35,none,none,Greerton Depot,15:01,15:32,31 minutes
+T26705,05:53,16:25,none,none,Tauranga CBD,11:01,11:34,33 minutes
+T26706,09:53,20:55,none,none,Greerton Depot,15:20,16:01,41 minutes
+T26707,05:53,16:34,none,none,Tauranga CBD,10:09,11:04,55 minutes
+T26709,05:54,16:41,none,none,Tauranga CBD,10:55,11:34,39 minutes
+T26711,06:01,17:20,none,none,Greerton Depot,11:16,12:02,46 minutes
+T26713,06:02,17:10,none,none,Tauranga CBD,11:04,12:04,60 minutes
+T26715,06:08,17:45,none,none,Tauranga CBD,11:24,12:24,60 minutes
+T26717,06:14,17:48,none,none,Tauranga CBD,11:44,12:44,60 minutes
+T26719,06:19,17:59,none,none,Greerton Depot,11:46,12:31,45 minutes
+T26721,06:35,18:18,none,none,Tauranga CBD,12:01,13:01,60 minutes
+T26723,06:46,18:25,none,none,Papamoa Depot,12:05,12:58,53 minutes
+T26725,06:52,18:50,none,none,Greerton Depot,12:22,13:22,60 minutes
+T26727,07:23,18:45,none,none,Tauranga CBD,12:40,13:36,56 minutes
+T26729,07:25,19:24,none,none,Tauranga CBD,12:54,13:54,60 minutes
+T26731,07:52,19:36,none,none,Greerton Depot,13:18,14:18,60 minutes
+T26733,08:05,19:27,none,none,Tauranga CBD,13:25,13:59,34 minutes
+T26735,08:10,19:38,none,none,Tauranga CBD,13:31,14:30,59 minutes
+T26737,08:11,19:48,none,none,Tauranga CBD,13:39,14:19,40 minutes
+T26739,08:15,20:10,none,none,Greerton Depot,13:42,14:42,60 minutes
+T26741,08:22,20:01,none,none,Greerton Depot,13:31,14:31,60 minutes
+T26743,08:41,19:55,none,none,Tauranga CBD,13:39,14:33,54 minutes
+T26745,08:46,20:18,none,none,Tauranga CBD,13:49,14:49,60 minutes
+T26747,09:00,20:57,none,none,Tauranga CBD,14:29,15:29,60 minutes
+T26801,05:42,14:21,none,none,Tauranga CBD,10:21,11:03,42 minutes
+T26802,11:22,20:20,none,none,Greerton Depot,13:56,14:56,60 minutes
+T26803,05:45,13:49,none,none,Tauranga CBD,08:31,09:04,33 minutes
+T26804,12:00,20:54,none,none,Tauranga CBD,15:29,16:29,60 minutes
+T26805,06:24,14:54,none,none,Tauranga CBD,10:54,11:30,36 minutes
+T26806,12:23,20:48,none,none,Tauranga CBD,14:22,15:21,59 minutes
+T26807,06:27,15:21,none,none,Tauranga CBD,11:54,12:54,60 minutes
+T26808,12:53,21:16,none,none,Tauranga CBD,18:01,18:36,35 minutes
+T26810,13:22,21:02,none,none,Tauranga CBD,16:24,16:58,34 minutes
+T28701,05:44,16:16,none,none,Tauranga CBD,10:31,11:06,35 minutes
+T28702,10:01,20:56,none,none,Tauranga CBD,14:54,15:33,39 minutes
+T28703,06:11,17:56,none,none,Tauranga CBD,11:31,12:31,60 minutes
+T28704,11:46,21:52,none,none,Tauranga CBD,15:55,16:29,34 minutes
+T28705,06:44,18:39,none,none,Greerton Depot,12:14,13:14,60 minutes
+T28707,07:11,18:56,none,none,Greerton Depot,12:32,13:32,60 minutes
+T28709,07:22,19:21,none,none,Greerton Depot,12:51,13:51,60 minutes
+T28711,08:22,19:56,none,none,Tauranga CBD,13:47,14:36,49 minutes
+T28713,08:45,20:13,none,none,Greerton Depot,13:50,14:50,60 minutes
+T28802,11:44,20:35,none,none,Tauranga CBD,14:19,15:19,60 minutes
+T28804,11:49,20:25,none,none,Tauranga CBD,15:59,16:59,60 minutes
+T28806,12:22,20:36,none,none,Tauranga CBD,14:40,15:29,49 minutes
+T28808,12:46,21:04,none,none,Tauranga CBD,15:25,16:04,39 minutes
