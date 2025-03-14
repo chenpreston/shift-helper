@@ -1,4 +1,4 @@
-const CACHE_NAME = "shift-helper-cache-v0.6.0"; // 更新缓存时修改版本号       
+const CACHE_NAME = "shift-helper-cache-v0.6.1"; // 更新缓存时修改版本号        
 const urlsToCache = [
   "/",
   "./index.html",

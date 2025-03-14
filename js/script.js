@@ -95,7 +95,7 @@ async function initData() {
 
 initData().catch((error) => console.error("Initialization failed:", error));
 
-const appVersion = "v0.6.0";
+const appVersion = "v0.6.1";
 const shiftDetailsVersion = "28.01.2025";
 
 document.addEventListener("DOMContentLoaded", function () {
