@@ -4,14 +4,14 @@ body {
   margin-top: 3vh;
   display: flex;
   justify-content: center;
-  align-items: top ;
+  align-items: center ;
   min-height: 70vh;
   background-color: #f4f7f9;
 }
 
 /* 通用容器 */
 #depot-selection-container {
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   padding: 20px;
   background-color: #fff;
@@ -31,18 +31,18 @@ h1 {
   color: #333;
 }
 
-#version {
+/* #version {
   
   padding: 0;
   
   margin-bottom: 0;
   
-}
+} */
 
-/* 提示文字 */
-#depot-prompt p {
-  margin: 0; /* 简化为单行 */
-  font-size: 0.5em; /* 调整为更合适的大小 */
+/*
+ #depot-prompt p {
+  margin: 0;
+  font-size: 0.5em;
   color: #555;
 }
 
@@ -102,11 +102,11 @@ h1 {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #000;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #000;
 }
 
 input:checked + .slider:before {
@@ -119,7 +119,7 @@ input:checked + .slider:before {
 #standby-shifts {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 /* 通用按钮样式 */
@@ -127,7 +127,7 @@ button {
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
-  background-color: #007bff;
+  background-color: #000;
   color: #fff;
   font-size: 1em;
   cursor: pointer;
@@ -135,7 +135,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #000;
 }
 
 /* 特定按钮样式 */
@@ -247,7 +247,7 @@ button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-/* 联系和关于按钮 */
+/*
 #contact-about-buttons {
   margin-top: 40px;
   text-align: center;

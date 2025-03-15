@@ -85,8 +85,8 @@ function parseShiftsCSV(data) {
 }
 
 async function initData() {
-  const optionsData = await loadCSV("./data/options.csv");
-  const shiftsData = await loadCSV("./data/shifts.csv");
+  const optionsData = await loadCSV("/shift-helper/data/options.csv");
+  const shiftsData = await loadCSV("/shift-helper/data/shifts.csv");
   shiftOptionsGroups = parseOptionsCSV(optionsData);
   shiftDetailsDictionary = parseShiftsCSV(shiftsData);
   console.log("已加载 options.csv:", shiftOptionsGroups);
@@ -95,14 +95,14 @@ async function initData() {
 
 initData().catch((error) => console.error("Initialization failed:", error));
 
-const appVersion = "v0.6.1";
-const shiftDetailsVersion = "28.01.2025";
+// const appVersion = "v0.6.1";
+// const shiftDetailsVersion = "28.01.2025";
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOMContentLoaded");
 
-  document.querySelector("#depot-prompt").innerHTML += `<p>app version: ${appVersion}</p>`;
-  document.querySelector("#depot-prompt").innerHTML += `<p>shift details database version: ${shiftDetailsVersion}</p>`;
+//  document.querySelector("#depot-prompt").innerHTML += `<p>app version: ${appVersion}</p>`;
+//  document.querySelector("#depot-prompt").innerHTML += `<p>shift details database version: ${shiftDetailsVersion}</p>`;
 
   // 获取 DOM 元素
   const schoolHolidaySwitch = document.getElementById("school-holiday-switch");
@@ -118,11 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const scheduleWeekView = document.getElementById("schedule-week-view");
   const backToDateSelectorButton = document.getElementById("back-to-date-selector-button");
   const addToCalendarButton = document.getElementById("add-to-calendar-button");
-  const aboutSection = document.getElementById("about-section");
-  const aboutButton = document.getElementById("about-button");
-  const backToDepotFromAboutButton = document.getElementById("back-to-depot-from-about");
-  const contactButton = document.getElementById("contact-button");
-  const contactSection = document.getElementById("contact-section");
+  //  const aboutSection = document.getElementById("about-section");
+  //  const aboutButton = document.getElementById("about-button");
+  //  const backToDepotFromAboutButton = document.getElementById("back-to-depot-from-about");
+  //  const contactButton = document.getElementById("contact-button");
+  //  const contactSection = document.getElementById("contact-section");
   const resetShiftsButton = document.getElementById("reset-shifts");
   const toggleWeekdaysButton = document.getElementById("toggle-weekdays");
   const restHolidaysSwitch = document.getElementById("reset-holidays");
@@ -309,14 +309,14 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // 页面导航（保持不变）
-  contactButton.addEventListener("click", () => {
-    console.log("Sent Feedback 按钮被点击");
-    depotSelectionUI.style.display = "none";
-    aboutSection.style.display = "none";
-    weekDateSelector.style.display = "none";
-    scheduleWeekView.style.display = "none";
-    contactSection.style.display = "block";
-  });
+ // contactButton.addEventListener("click", () => {
+ //   console.log("Sent Feedback 按钮被点击");
+ //   depotSelectionUI.style.display = "none";
+ //   aboutSection.style.display = "none";
+ //   weekDateSelector.style.display = "none";
+ //   scheduleWeekView.style.display = "none";
+ //   contactSection.style.display = "block";
+ // });
 
   backToDepotFromForm.addEventListener("click", () => {
     console.log("Back from Sent Feedback 按钮被点击");
@@ -327,21 +327,21 @@ document.addEventListener("DOMContentLoaded", function () {
     contactSection.style.display = "none";
   });
 
-  aboutButton.addEventListener("click", () => {
-    console.log("About 按钮被点击");
-    depotSelectionUI.style.display = "none";
-    aboutSection.style.display = "block";
-    weekDateSelector.style.display = "none";
-    scheduleWeekView.style.display = "none";
-  });
+ // aboutButton.addEventListener("click", () => {
+ //   console.log("About 按钮被点击");
+ //   depotSelectionUI.style.display = "none";
+ //   aboutSection.style.display = "block";
+ //   weekDateSelector.style.display = "none";
+ //   scheduleWeekView.style.display = "none";
+ // });
 
-  backToDepotFromAboutButton.addEventListener("click", () => {
-    console.log("Back from About 按钮被点击");
-    depotSelectionUI.style.display = "block";
-    aboutSection.style.display = "none";
-    weekDateSelector.style.display = "none";
-    scheduleWeekView.style.display = "none";
-  });
+//  backToDepotFromAboutButton.addEventListener("click", () => {
+//    console.log("Back from About 按钮被点击");
+//    depotSelectionUI.style.display = "block";
+//    aboutSection.style.display = "none";
+//    weekDateSelector.style.display = "none";
+//    scheduleWeekView.style.display = "none";
+//  });
 
   // School Holiday 开关
   schoolHolidaySwitch.addEventListener("change", function (event) {
@@ -642,7 +642,7 @@ if ("serviceWorker" in navigator) {
             navigator.serviceWorker.controller
           ) {
             console.log("有新版本的 Service Worker 可用");
-            if (confirm("A new version is available. Refresh to update?")) {
+            if (confirm("A new version SHIFT Helper is available. Refresh to update?")) {
               newWorker.postMessage({ action: "skipWaiting" });
             }
           }
