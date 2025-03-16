@@ -1,3 +1,10 @@
+/* @license
+SHIFT Helper
+v0.6.3
+https://github.com/chenpreston/shift-helper
+License: MIT
+*/
+
 console.log("script.js 加载中...");
 
 let shiftOptionsGroups = {};
@@ -95,7 +102,7 @@ async function initData() {
 
 initData().catch((error) => console.error("Initialization failed:", error));
 
-// const appVersion = "v0.6.1";
+// const appVersion = "v0.6.2";
 // const shiftDetailsVersion = "28.01.2025";
 
 document.addEventListener("DOMContentLoaded", function () {
