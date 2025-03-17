@@ -1,4 +1,4 @@
-const CACHE_NAME = "shift-helper-cache-v0.6.4"; // 更新缓存时修改版本号
+const CACHE_NAME = "shift-helper-cache-v0.6.5"; // 更新缓存时修改版本号
 const urlsToCache = [
   "/",
   "./index.html",
@@ -16,6 +16,7 @@ const urlsToCache = [
   "./assets/icons/favicon-32x32.png",
   "./js/components/utils.js",
   "./js/lib/papaparse.js",
+  "./manifest.json",
 ];
 
 // 安装事件
