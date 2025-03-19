@@ -5,7 +5,7 @@ function generateUuid() {
 }
 
 function formatDateTimeToUTCString(date) {
-  console.log("formatDateTimeToUTCString 函数被调用, 参数 date:", date); // **调试信息： 输出函数被调用信息 和 参数 date**
+  
 
   if (!(date instanceof Date) || isNaN(date)) {
     // **添加 检查 date 是否是有效的 Date 对象**
@@ -23,10 +23,7 @@ function formatDateTimeToUTCString(date) {
   const minute = String(date.getUTCMinutes()).padStart(2, "0");
   const second = String(date.getUTCSeconds()).padStart(2, "0");
   const formattedDateTime = `${year}${month}${day}T${hour}${minute}${second}`; // 先将格式化后的日期时间 存储到变量 formattedDateTime
-  console.log(
-    "formatDateTimeToUTCString 函数返回值 formattedDateTime:",
-    formattedDateTime
-  ); // **调试信息： 输出函数返回值 formattedDateTime**
+  
   return formattedDateTime; // 返回 格式化后的日期时间字符串
 }
 
@@ -45,28 +42,7 @@ function createUTCDateFromDateTextAndTime(dateText, timeStr) {
       parseInt(minute),
       0
     )
-  ); // 使用 Date.UTC 构建 UTC Date 对象，月份需要 -1
-
-  console.log(
-    "createUTCDateFromDateTextAndTime 函数生成的 utcDate 对象 (Date 对象本身):",
-    utcDate
-  ); // **调试信息 1: 输出 Date 对象本身**
-  console.log(
-    "createUTCDateFromDateTextAndTime 函数生成的 utcDate 对象 (utcDate.valueOf()):",
-    utcDate.valueOf()
-  ); // **调试信息 2: 输出 utcDate.valueOf() -  UTC 毫秒时间戳**
-  console.log(
-    "createUTCDateFromDateTextAndTime 函数生成的 utcDate 对象 (utcDate.toString()):",
-    utcDate.toString()
-  ); // **调试信息 3: 输出 utcDate.toString() -  Date 对象的本地时间字符串表示**
-  console.log(
-    "createUTCDateFromDateTextAndTime 函数生成的 utcDate 对象 (utcDate.toUTCString()):",
-    utcDate.toUTCString()
-  ); // **调试信息 4: 输出 utcDate.toUTCString() - UTC 时间字符串表示**
-  console.log(
-    "createUTCDateFromDateTextAndTime 函数生成的 utcDate 对象 (utcDate.toISOString()):",
-    utcDate.toISOString()
-  ); // **调试信息 5: 输出 utcDate.toISOString() - ISO 8601 UTC 字符串**
+  ); // 使用 Date.UTC 构建 UTC Date 对象，月份需要 -1，因为月份从 0 开始
 
   if (isNaN(utcDate)) {
     // 检查 Date 对象是否有效

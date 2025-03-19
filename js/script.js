@@ -5,7 +5,7 @@ https://github.com/chenpreston/shift-helper
 License: MIT
 */
 
-console.log("script.js 加载中...");
+console.log("shift helper 加载中...");
 
 let shiftOptionsGroups = {};
 let shiftDetailsDictionary = {};
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const papamoaDepotButton = document.getElementById("papamoa-depot");
   const malemeDepotButton = document.getElementById("maleme-depot");
   const standbyDepotButton = document.getElementById("standby-depot");
-  const backToDepotFromForm = document.getElementById("back-to-depot-selection-from-form");
+  //  const backToDepotFromForm = document.getElementById("back-to-depot-selection-from-form");
   const backToDepotSelectionButton = document.getElementById("back-to-depot-selection");
   const depotSelectionUI = document.getElementById("depot-selection-ui");
   const weekDateSelector = document.getElementById("week-date-selector");
@@ -325,14 +325,14 @@ document.addEventListener("DOMContentLoaded", function () {
  //   contactSection.style.display = "block";
  // });
 
-  backToDepotFromForm.addEventListener("click", () => {
-    console.log("Back from Sent Feedback 按钮被点击");
-    depotSelectionUI.style.display = "block";
-    aboutSection.style.display = "none";
-    weekDateSelector.style.display = "none";
-    scheduleWeekView.style.display = "none";
-    contactSection.style.display = "none";
-  });
+  //  backToDepotFromForm.addEventListener("click", () => {
+  //  console.log("Back from Sent Feedback 按钮被点击");
+  //  depotSelectionUI.style.display = "block";
+  //  aboutSection.style.display = "none";
+  //  weekDateSelector.style.display = "none";
+  //  scheduleWeekView.style.display = "none";
+  //  contactSection.style.display = "none";
+ // });
 
  // aboutButton.addEventListener("click", () => {
  //   console.log("About 按钮被点击");
@@ -636,11 +636,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Service Worker 注册
 if ("serviceWorker" in navigator) {
-  console.log("script.js: 注册 Service Worker 中...");
+  console.log("shift helper: 注册 Service Worker 中...");
   navigator.serviceWorker
     .register("./service-worker.js")
     .then((registration) => {
-      console.log("script.js: Service Worker 已注册:", registration);
+      console.log("shift helper: Service Worker 已注册:", registration);
       registration.addEventListener("updatefound", () => {
         const newWorker = registration.installing;
         newWorker.addEventListener("statechange", () => {
@@ -648,7 +648,7 @@ if ("serviceWorker" in navigator) {
             newWorker.state === "installed" &&
             navigator.serviceWorker.controller
           ) {
-            console.log("有新版本的 Service Worker 可用");
+            console.log("shift helper: 有新版本的 Service Worker 可用");
             if (confirm("A new version SHIFT Helper is available. Refresh to update?")) {
               newWorker.postMessage({ action: "skipWaiting" });
             }
@@ -657,17 +657,17 @@ if ("serviceWorker" in navigator) {
       });
     })
     .catch((err) =>
-      console.error("script.js: Service Worker registration failed:", err)
+      console.error("shift helper: Service Worker registration failed:", err)
     );
 
   navigator.serviceWorker.addEventListener("controllerchange", () => {
-    console.log("正在载入新版本的 Service Worker");
+    console.log("shift helper: 正在载入新版本的 Service Worker");
     window.location.reload();
   });
 
   navigator.serviceWorker.addEventListener("message", (event) => {
     if (event.data && event.data.action === "skipWaiting") {
-      console.log("Skipping waiting via message");
+      console.log("shift helper: Skipping waiting via message");
     }
   });
 }

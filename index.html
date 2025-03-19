@@ -1,6 +1,5 @@
 <!-- @license
 SHIFT Helper
-v0.6.3
 https://github.com/chenpreston/shift-helper
 License: MIT
 -->
@@ -35,19 +34,21 @@ License: MIT
     />
     <meta charset="UTF-8" />
     <title>SHIFT Helper</title>
-    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCDE1JNW2B"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LCDE1JNW2B"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-LCDE1JNW2B");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-LCDE1JNW2B");
     </script>
     <div id="depot-selection-container">
       <div id="depot-selection-ui">
@@ -93,7 +94,6 @@ License: MIT
       </section>
 
       <section id="schedule-week-view" style="display: none">
-        
         <div id="schedule-table-view-container">
           <table>
             <thead>
@@ -106,8 +106,13 @@ License: MIT
             </thead>
             <tbody>
               <tr>
-                
-                <th><input id="same-shift-checkbox-sun" type="checkbox" class="same-shift-checkbox"><label for="same-shift-checkbox-sun">SUN</label></th>
+                <th>
+                  <input
+                    id="same-shift-checkbox-sun"
+                    type="checkbox"
+                    class="same-shift-checkbox"
+                  /><label for="same-shift-checkbox-sun">SUN</label>
+                </th>
                 <td></td>
                 <td>
                   <select class="shift-selector">
@@ -120,13 +125,20 @@ License: MIT
                 </td>
                 <td>
                   <label class="switch"
-                    ><input type="checkbox" id="switch-sun" /><span class="slider round"></span
+                    ><input type="checkbox" id="switch-sun" /><span
+                      class="slider round"
+                    ></span
                   ></label>
                 </td>
               </tr>
               <tr>
-               
-                <th><input id="same-shift-checkbox-mon" type="checkbox" class="same-shift-checkbox"><label for="same-shift-checkbox-mon">MON</label></th>
+                <th>
+                  <input
+                    id="same-shift-checkbox-mon"
+                    type="checkbox"
+                    class="same-shift-checkbox"
+                  /><label for="same-shift-checkbox-mon">MON</label>
+                </th>
                 <td></td>
                 <td>
                   <select class="shift-selector">
@@ -140,13 +152,20 @@ License: MIT
                 <td>
                   <label
                     class="switch weekday-holiday-switch weekday-holiday-switch-mon"
-                    ><input type="checkbox" id="switch-mon" /><span class="slider round"></span
+                    ><input type="checkbox" id="switch-mon" /><span
+                      class="slider round"
+                    ></span
                   ></label>
                 </td>
               </tr>
               <tr>
-               
-                <th><input id="same-shift-checkbox-tue" type="checkbox" class="same-shift-checkbox"><label for="same-shift-checkbox-tue">TUE</label></th>
+                <th>
+                  <input
+                    id="same-shift-checkbox-tue"
+                    type="checkbox"
+                    class="same-shift-checkbox"
+                  /><label for="same-shift-checkbox-tue">TUE</label>
+                </th>
                 <td></td>
                 <td>
                   <select class="shift-selector">
@@ -160,13 +179,20 @@ License: MIT
                 <td>
                   <label
                     class="switch weekday-holiday-switch weekday-holiday-switch-tue"
-                    ><input type="checkbox" id="switch-tue" /><span class="slider round"></span
+                    ><input type="checkbox" id="switch-tue" /><span
+                      class="slider round"
+                    ></span
                   ></label>
                 </td>
               </tr>
               <tr>
-               
-                <th><input id="same-shift-checkbox-wed" type="checkbox" class="same-shift-checkbox"><label for="same-shift-checkbox-wed">WED</label></th>
+                <th>
+                  <input
+                    id="same-shift-checkbox-wed"
+                    type="checkbox"
+                    class="same-shift-checkbox"
+                  /><label for="same-shift-checkbox-wed">WED</label>
+                </th>
                 <td></td>
                 <td>
                   <select class="shift-selector">
@@ -180,13 +206,20 @@ License: MIT
                 <td>
                   <label
                     class="switch weekday-holiday-switch weekday-holiday-switch-wed"
-                    ><input type="checkbox" id="switch-wed" /><span class="slider round"></span
+                    ><input type="checkbox" id="switch-wed" /><span
+                      class="slider round"
+                    ></span
                   ></label>
                 </td>
               </tr>
               <tr>
-           
-                <th><input id="same-shift-checkbox-thu" type="checkbox" class="same-shift-checkbox"><label for="same-shift-checkbox-thu">THU</label></th>
+                <th>
+                  <input
+                    id="same-shift-checkbox-thu"
+                    type="checkbox"
+                    class="same-shift-checkbox"
+                  /><label for="same-shift-checkbox-thu">THU</label>
+                </th>
                 <td></td>
                 <td>
                   <select class="shift-selector">
@@ -200,13 +233,20 @@ License: MIT
                 <td>
                   <label
                     class="switch weekday-holiday-switch weekday-holiday-switch-thu"
-                    ><input type="checkbox" id="switch-thu" /><span class="slider round"></span
+                    ><input type="checkbox" id="switch-thu" /><span
+                      class="slider round"
+                    ></span
                   ></label>
                 </td>
               </tr>
               <tr>
-             
-                <th><input id="same-shift-checkbox-fri" type="checkbox" class="same-shift-checkbox"><label for="same-shift-checkbox-fri">FRI</label></th>
+                <th>
+                  <input
+                    id="same-shift-checkbox-fri"
+                    type="checkbox"
+                    class="same-shift-checkbox"
+                  /><label for="same-shift-checkbox-fri">FRI</label>
+                </th>
                 <td></td>
                 <td>
                   <select class="shift-selector">
@@ -220,13 +260,20 @@ License: MIT
                 <td>
                   <label
                     class="switch weekday-holiday-switch weekday-holiday-switch-fri"
-                    ><input type="checkbox" id="switch-fri" /><span class="slider round"></span
+                    ><input type="checkbox" id="switch-fri" /><span
+                      class="slider round"
+                    ></span
                   ></label>
                 </td>
               </tr>
               <tr>
-               
-                <th><input id="same-shift-checkbox-sat" type="checkbox" class="same-shift-checkbox"><label for="same-shift-checkbox-sat">SAT</th>
+                <th>
+                  <input
+                    id="same-shift-checkbox-sat"
+                    type="checkbox"
+                    class="same-shift-checkbox"
+                  /><label for="same-shift-checkbox-sat">SAT</label>
+                </th>
                 <td></td>
                 <td>
                   <select class="shift-selector">
@@ -239,22 +286,21 @@ License: MIT
                 </td>
                 <td>
                   <label class="switch"
-                    ><input type="checkbox" id="switch-sat" /><span class="slider round"></span
+                    ><input type="checkbox" id="switch-sat" /><span
+                      class="slider round"
+                    ></span
                   ></label>
                 </td>
               </tr>
-              
             </tbody>
 
-          <tbody id="control-row">
-            <tr>
-               
-              <th><button id="toggle-weekdays">A/C</button></th>
-              <td></td>
-              <td><button id="reset-shifts">Reset Shifts</button>
-              </td>
-              <td><button id="reset-holidays">Reset</button></td>
-            </tr>
+            <tbody id="control-row">
+              <tr>
+                <th><button id="toggle-weekdays">A/C</button></th>
+                <td></td>
+                <td><button id="reset-shifts">Reset Shifts</button></td>
+                <td><button id="reset-holidays">Reset</button></td>
+              </tr>
             </tbody>
           </table>
           <button
@@ -272,93 +318,9 @@ License: MIT
           <button id="back-to-date-selector-button">Back</button>
         </div>
       </section>
-      <section id="contact-section" style="display: none">
-        <form
-          action="https://formspree.io/f/mjkybokv"
-          class="fs-form"
-          target="_top"
-          method="POST"
-        >
-          <div class="fs-field">
-            <label class="fs-label" for="email">Email</label>
-            <input class="fs-input" id="email" name="email" required />
-          </div>
-          <div class="fs-field">
-            <label class="fs-label" for="message">Message</label>
-            <textarea
-              class="fs-textarea"
-              id="message"
-              name="message"
-            ></textarea>
-          </div>
-          <div class="fs-button-group">
-            <button class="fs-button" type="submit">Submit</button>
-            <button id="back-to-depot-selection-from-form">Back</button>
-          </div>
-        </form>
-      </section>
-      <section id="about-section" style="display: none">
-        <h2>About SHIFT Helper</h2>
-        <div class="about-content">
-          <a
-            href="https://github.com/chenpreston"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              id="github-logo"
-              src="./assets/icons/github-mark.svg"
-              alt="GitHub"
-              width="30"
-              height="30"
-              style="vertical-align: middle"
-            />
-          </a>
-          <!-- 说明文字 -->
-
-          <p style="vertical-align: middle; text-align: center">
-            This application is hosted on
-            <a
-              href="https://github.com/chenpreston/shift-helper"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                id="github-mark"
-                src="./assets/icons/GitHub_Logo.png"
-                alt="GitHub"
-                width="74"
-                height="30"
-                style="vertical-align: middle"
-              />
-            </a>
-          </p>
-          <a
-            href="https://github.com/chenpreston/shift-helper/releases"
-            target="_blank"
-            ><p id="update-history">Update History</p></a
-          >
-          <a
-            href="https://github.com/chenpreston/shift-helper/blob/main/README.md"
-            target="_blank"
-            ><p id="readme">README</p></a
-          >
-
-          <section id="license">
-            <p>SHIFT Helper - Copyright © 2025 chenpreston</p>
-            <p>
-              under the
-              <a
-                href="https://github.com/chenpreston/shift-helper/blob/main/LICENSE"
-                >MIT Lisense</a
-              >.
-            </p>
-          </section>
-        </div>
-        <button id="back-to-depot-from-about">Back</button>
-      </section>
     </div>
     <script src="./js/lib/papaparse.js"></script>
     <script src="./js/components/utils.js"></script>
-    <script type="module" src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

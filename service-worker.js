@@ -1,4 +1,4 @@
-const CACHE_NAME = "shift-helper-cache-v0.6.5"; // 更新缓存时修改版本号
+const CACHE_NAME = "shift-helper-cache-v0.6.6"; // 更新缓存时修改版本号    
 const urlsToCache = [
   "/",
   "./index.html",
@@ -6,17 +6,9 @@ const urlsToCache = [
   "./js/script.js",
   "./data/shifts.csv",
   "./data/options.csv",
-  "./assets/icons/icon-192x192.png",
-  "./assets/icons/icon-512x512.png",
-  "./assets/icons/GitHub_logo.png",
-  "./assets/icons/github-mark.svg",
-  "./assets/icons/apple-touch-icon.png",
   "./favicon.ico",
-  "./assets/icons/favicon-16x16.png",
-  "./assets/icons/favicon-32x32.png",
   "./js/components/utils.js",
   "./js/lib/papaparse.js",
-  "./manifest.json",
 ];
 
 // 安装事件
@@ -25,11 +17,11 @@ self.addEventListener("install", function (event) {
     caches
       .open(CACHE_NAME)
       .then(function (cache) {
-        console.log("Opened cache:", CACHE_NAME);
+        console.log("shift helper Opened cache:", CACHE_NAME);
         return cache.addAll(urlsToCache);
       })
       .then(() => self.skipWaiting())
-      .catch((error) => console.error("Install failed:", error))
+      .catch((error) => console.error("shift helper Install failed:", error))
   );
 });
 
@@ -65,7 +57,7 @@ self.addEventListener("fetch", function (event) {
           return networkResponse;
         })
         .catch(function (error) {
-          console.error("Fetch failed:", error);
+          console.error("shift helper Fetch failed:", error);
           // 可以返回一个 fallback 响应
           return new Response("Network error occurred", {
             status: 503,
@@ -86,14 +78,14 @@ self.addEventListener("activate", function (event) {
         return Promise.all(
           cacheNames.map((cacheName) => {
             if (cacheWhitelist.indexOf(cacheName) === -1) {
-              console.log("Deleting old cache:", cacheName);
+              console.log("shift helper Deleting old cache:", cacheName);
               return caches.delete(cacheName);
             }
           })
         );
       })
       .then(() => self.clients.claim())
-      .catch((error) => console.error("Activation failed:", error))
+      .catch((error) => console.error("shift helper Activation failed:", error))
   );
 });
 
