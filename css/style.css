@@ -1,10 +1,10 @@
 /* 全局样式 */
 body {
   font-family: sans-serif;
-  margin-top: 3vh;
+
   display: flex;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   min-height: 70vh;
   background-color: #f4f7f9;
 }
@@ -13,11 +13,12 @@ body {
 #depot-selection-container {
   width: 100%;
   max-width: 400px;
-  padding: 20px;
+  padding: 15vh 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  height: calc(100vh - 275px);
 }
 
 /* 头部样式 */
@@ -52,16 +53,24 @@ h1 {
 
 /* Switch 开关样式 */
 #school-holiday-setting {
+
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  justify-content: center;
+
+  margin-top: 50px;
 }
 
 #school-holiday-setting label[for="school-holiday-switch"] {
-  text-align: left;
-  margin-right: 15px;
+  
+  margin-top: 0.1em;
+  margin-right: 10px;
   color: #333;
+  font-size: 1em;
+}
+
+#tip-top {
+  
+  font-size: 1.2em;
 }
 
 .switch {
@@ -119,7 +128,7 @@ input:checked + .slider:before {
 #standby-shifts {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 /* 通用按钮样式 */
@@ -236,7 +245,8 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 0.9em;
-  background: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right 5px center;
+  background: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    no-repeat right 5px center;
   appearance: none;
 }
 
@@ -419,12 +429,11 @@ a:hover {
     flex-direction: row; /* 大屏幕时按钮水平排列 */
     justify-content: center; /* 居中对齐 */
   }
-  
+
   .fs-form {
     padding: 0; /* 大屏幕时移除左右内边距 */
   }
 }
-
 
 tr.highlight {
   background-color: #007bff81;
@@ -434,7 +443,9 @@ tr.highlight {
   padding: 10px;
 }
 
-#toggle-weekdays, #reset-shifts, #reset-holidays{
+#toggle-weekdays,
+#reset-shifts,
+#reset-holidays {
   padding: 5px 10px;
   margin: 0 5px;
 }

@@ -15,23 +15,7 @@ License: MIT
       name="description"
       content="A tool to help you manage shifts effortlessly. Select a DEPOT, plan your weekly shifts, and add them to your calendar."
     />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/icons/favicon-16x16.png"
-    />
+    
     <meta charset="UTF-8" />
     <title>SHIFT Helper</title>
     <link rel="stylesheet" href="./css/style.css" />
@@ -59,15 +43,12 @@ License: MIT
         <!-- <div id="version">
           <section id="depot-prompt"></section>
         </div> -->
-        <section id="school-holiday-setting">
-          <label for="school-holiday-switch">School Holiday</label>
-          <label class="switch">
-            <input type="checkbox" id="school-holiday-switch" />
-            <span class="slider round"></span>
-          </label>
-        </section>
+        
 
         <section id="depot-buttons">
+          <label id="tip-top" for="drive-shifts"
+            ><strong>Choose a depot to start</strong></label
+          >
           <fieldset id="drive-shifts">
             <legend>Driving Shifts</legend>
             <button id="greerton-depot">Greerton</button>
@@ -76,8 +57,18 @@ License: MIT
           </fieldset>
           <fieldset id="standby-shifts">
             <legend>NON-Driving Shifts</legend>
-            <button id="standby-depot">Standby</button>
+            <button id="standby-depot"><img src="./standby.svg" width="20"> Standby</button>
           </fieldset>
+
+          <section id="school-holiday-setting">
+            <label for="school-holiday-switch"
+              >School Holiday</label
+            >
+            <label class="switch">
+              <input type="checkbox" id="school-holiday-switch" />
+              <span class="slider round"></span>
+            </label>
+          </section>
 
           <!-- <div id="contact-about-buttons">
             <button id="contact-button" class="contact-btn">
