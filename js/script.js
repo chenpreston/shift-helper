@@ -5,7 +5,7 @@ https://github.com/chenpreston/shift-helper
 License: MIT
 */
 
-console.log("shift helper 加载中...");
+
 
 let shiftOptionsGroups = {};
 let shiftDetailsDictionary = {};
@@ -96,8 +96,7 @@ async function initData() {
   const shiftsData = await loadCSV("/shift-helper/data/shifts.csv");
   shiftOptionsGroups = parseOptionsCSV(optionsData);
   shiftDetailsDictionary = parseShiftsCSV(shiftsData);
-  console.log("已加载 options.csv:", shiftOptionsGroups);
-  console.log("已加载 shifts.csv:", shiftDetailsDictionary);
+  
 }
 
 initData().catch((error) => console.error("Initialization failed:", error));
@@ -106,7 +105,7 @@ initData().catch((error) => console.error("Initialization failed:", error));
 // const shiftDetailsVersion = "28.01.2025";
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOMContentLoaded");
+  
 
 //  document.querySelector("#depot-prompt").innerHTML += `<p>app version: ${appVersion}</p>`;
 //  document.querySelector("#depot-prompt").innerHTML += `<p>shift details database version: ${shiftDetailsVersion}</p>`;
@@ -224,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       // 未选中的行保持原有值，不做任何修改
     });
-    console.log(`Shift 选择已同步为: ${selectedValue}`);
+    
     checkboxes.sun.checked = false;
     checkboxes.mon.checked = false;
     checkboxes.tue.checked = false;
@@ -261,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // toggle-weekdays 按钮
   toggleWeekdaysButton.addEventListener("click", function () {
-    console.log("A/C按钮被点击");
+   
     const anyChecked = Object.values(checkboxes).some(checkbox => checkbox.checked);
 
     if (anyChecked) {
@@ -292,18 +291,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // reset-shifts 按钮
   resetShiftsButton.addEventListener("click", function () {
     if (confirm("Are you sure you want to reset all shift choices?")) {
-      console.log("reset shifts 按钮被点击");
+     
       shiftSelectors.forEach(select => {
         select.value = "";
         select.disabled = false;
       });
-      console.log("所有 shift 选择已重置");
+    
     }
   });
 
   // reset-holiday-switch 按钮
   restHolidaysSwitch.addEventListener("click", function () {
-      console.log("reset holiday switch 按钮被点击");
+     
       everyDayHolidayCheckbox.sunSlider.checked = false;
       everyDayHolidayCheckbox.monSlider.checked = false;
       everyDayHolidayCheckbox.tueSlider.checked = false;
@@ -311,49 +310,15 @@ document.addEventListener("DOMContentLoaded", function () {
       everyDayHolidayCheckbox.thuSlider.checked = false;
       everyDayHolidayCheckbox.friSlider.checked = false;
       everyDayHolidayCheckbox.satSlider.checked = false;
-      console.log("所有 weekday holiday switches 已重置");
+    
     }
   );
 
-  // 页面导航（保持不变）
- // contactButton.addEventListener("click", () => {
- //   console.log("Sent Feedback 按钮被点击");
- //   depotSelectionUI.style.display = "none";
- //   aboutSection.style.display = "none";
- //   weekDateSelector.style.display = "none";
- //   scheduleWeekView.style.display = "none";
- //   contactSection.style.display = "block";
- // });
-
-  //  backToDepotFromForm.addEventListener("click", () => {
-  //  console.log("Back from Sent Feedback 按钮被点击");
-  //  depotSelectionUI.style.display = "block";
-  //  aboutSection.style.display = "none";
-  //  weekDateSelector.style.display = "none";
-  //  scheduleWeekView.style.display = "none";
-  //  contactSection.style.display = "none";
- // });
-
- // aboutButton.addEventListener("click", () => {
- //   console.log("About 按钮被点击");
- //   depotSelectionUI.style.display = "none";
- //   aboutSection.style.display = "block";
- //   weekDateSelector.style.display = "none";
- //   scheduleWeekView.style.display = "none";
- // });
-
-//  backToDepotFromAboutButton.addEventListener("click", () => {
-//    console.log("Back from About 按钮被点击");
-//    depotSelectionUI.style.display = "block";
-//    aboutSection.style.display = "none";
-//    weekDateSelector.style.display = "none";
-//    scheduleWeekView.style.display = "none";
-//  });
 
   // School Holiday 开关
   schoolHolidaySwitch.addEventListener("change", function (event) {
     isSchoolHolidayEnabled = event.target.checked;
-    console.log("School Holiday Switch 状态改变:", isSchoolHolidayEnabled);
+    
     if (scheduleWeekView.style.display === "block") {
       updateShiftOptionsInTableView();
     }
@@ -361,7 +326,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // DEPOT 选择
   greertonDepotButton.addEventListener("click", function () {
-    console.log("Greerton 按钮被点击");
+   
     currentDepot = "greerton";
     depotSelectionUI.style.display = "none";
     weekDateSelector.style.display = "block";
@@ -369,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   papamoaDepotButton.addEventListener("click", function () {
-    console.log("Papamoa 按钮被点击");
+    
     currentDepot = "papamoa";
     depotSelectionUI.style.display = "none";
     weekDateSelector.style.display = "block";
@@ -377,7 +342,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   malemeDepotButton.addEventListener("click", function () {
-    console.log("Maleme 按钮被点击");
+   
     currentDepot = "maleme";
     depotSelectionUI.style.display = "none";
     weekDateSelector.style.display = "block";
@@ -385,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   standbyDepotButton.addEventListener("click", function () {
-    console.log("Standby 按钮被点击");
+   
     currentDepot = "standby";
     depotSelectionUI.style.display = "none";
     weekDateSelector.style.display = "block";
@@ -393,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   backToDepotSelectionButton.addEventListener("click", function () {
-    console.log("Back from date picker 按钮被点击");
+ 
     depotSelectionUI.style.display = "block";
     weekDateSelector.style.display = "none";
     scheduleWeekView.style.display = "none";
@@ -402,7 +367,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 日期选择
   weekStartDateInput.addEventListener("change", function (event) {
     const selectedDate = event.target.value;
-    console.log("用户在日期选择器中选择了日期:", selectedDate);
+    
 
     weekDateSelector.style.display = "none";
     scheduleWeekView.style.display = "block";
@@ -430,16 +395,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   backToDateSelectorButton.addEventListener("click", function () {
-    console.log("Back from schedule 按钮被点击");
+   
     weekDateSelector.style.display = "block";
     scheduleWeekView.style.display = "none";
   });
 
   // 更新 Shift 选项
   function updateShiftOptionsInTableView() {
-    console.log("updateShiftOptionsInTableView() 函数被调用");
+
     const currentOptionsGroupKey = isSchoolHolidayEnabled ? `${currentDepot}-schoolHoliday` : currentDepot;
-    console.log("当前opstions备选组:", currentOptionsGroupKey);
+ 
 
     if (!currentDepot) {
       console.error("currentDepot 未定义");
@@ -466,7 +431,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      //console.log(`处理星期${["日", "一", "二", "三", "四", "五", "六"][dayIndex]} (dayOfWeek: ${dayOfWeek})`);
+     
 
       const optionsGroup = shiftOptionsGroups[currentOptionsGroupKey][dayOfWeek];
       if (!optionsGroup) {
@@ -500,7 +465,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateSingleDayShiftOptionsHandler() {
       const index = Array.from(weekdayHolidaySwitches).indexOf(this);
-      console.log(`工作日${index + 1}公共假日开关状态改变`);
+     
       updateSingleDayShiftOptions(index + 1);
     }
 
@@ -543,7 +508,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 添加到日历（保持不变）
   addToCalendarButton.addEventListener("click", async function () {
-    console.log("add to calendar 按钮被点击");
+
     await initData();
 
     const scheduleTableBody = scheduleWeekView.querySelector("tbody");
@@ -598,7 +563,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     icsContent += "END:VCALENDAR\r\n";
-    console.log("已生成 .ics 文件:\n", icsContent);
+    
 
     const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
     const downloadUrl = URL.createObjectURL(blob);
@@ -606,7 +571,7 @@ document.addEventListener("DOMContentLoaded", function () {
     downloadLink.href = downloadUrl;
     downloadLink.click();
     URL.revokeObjectURL(downloadUrl);
-    console.log("已触发 .ics 文件下载");
+  
   });
 
   function generateEvent(summary, dateText, startTime, endTime) {
@@ -636,11 +601,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Service Worker 注册
 if ("serviceWorker" in navigator) {
-  console.log("shift helper: 注册 Service Worker 中...");
+  
   navigator.serviceWorker
     .register("./service-worker.js")
     .then((registration) => {
-      console.log("shift helper: Service Worker 已注册:", registration);
+      
       registration.addEventListener("updatefound", () => {
         const newWorker = registration.installing;
         newWorker.addEventListener("statechange", () => {
@@ -648,7 +613,7 @@ if ("serviceWorker" in navigator) {
             newWorker.state === "installed" &&
             navigator.serviceWorker.controller
           ) {
-            console.log("shift helper: 有新版本的 Service Worker 可用");
+            
             if (confirm("A new version SHIFT Helper is available. Refresh to update?")) {
               newWorker.postMessage({ action: "skipWaiting" });
             }
@@ -661,13 +626,13 @@ if ("serviceWorker" in navigator) {
     );
 
   navigator.serviceWorker.addEventListener("controllerchange", () => {
-    console.log("shift helper: 正在载入新版本的 Service Worker");
+    
     window.location.reload();
   });
 
   navigator.serviceWorker.addEventListener("message", (event) => {
     if (event.data && event.data.action === "skipWaiting") {
-      console.log("shift helper: Skipping waiting via message");
+      
     }
   });
 }

@@ -455,3 +455,11 @@ tr.highlight {
   cursor: not-allowed;
   opacity: 0.6;
 }
+
+@media (max-height: 667px) {
+  #depot-selection-container {
+    padding: 5px;
+    height: 80vh;
+  }
+  
+}
