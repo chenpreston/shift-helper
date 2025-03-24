@@ -1,4 +1,4 @@
-const CACHE_NAME = "shift-helper-cache-v0.7.1"; // 更新缓存时修改版本号
+const CACHE_NAME = "shift-helper-cache-v0.7.2"; // 更新缓存时修改版本号
 const CACHE_PREFIX = CACHE_NAME.split("-v")[0]; // 提取前缀 
 const urlsToCache = [
   "/",
