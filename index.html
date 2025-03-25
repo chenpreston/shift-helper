@@ -5,310 +5,248 @@ License: MIT
 -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCDE1JNW2B"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-LCDE1JNW2B");
-    </script>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-      user-scalable="no"
-    />
-    <meta
-      name="description"
-      content="A tool to help you manage shifts effortlessly. Select a DEPOT, plan your weekly shifts, and add them to your calendar."
-    />
-    
-    <meta charset="UTF-8" />
-    <title>SHIFT Helper</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div id="depot-selection-container">
-      <div id="depot-selection-ui">
-        <header>
-          <!-- <h1>SHIFT Helper</h1> -->
-        </header>
 
-        <!-- <div id="version">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCDE1JNW2B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-LCDE1JNW2B");
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no" />
+  <meta name="description"
+    content="A tool to help you manage shifts effortlessly. Select a DEPOT, plan your weekly shifts, and add them to your calendar." />
+
+  <meta charset="UTF-8" />
+  <title>SHIFT Helper</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div id="depot-selection-container">
+    <div id="depot-selection-ui">
+      <header>
+        <!-- <h1>SHIFT Helper</h1> -->
+      </header>
+
+      <!-- <div id="version">
           <section id="depot-prompt"></section>
         </div> -->
-        
 
-        <section id="depot-buttons">
-          <label id="tip-top" for="drive-shifts"
-            ><strong>Choose a depot to start</strong></label
-          >
-          <fieldset id="drive-shifts">
-            <legend>Driving Shifts</legend>
-            <button id="greerton-depot">Greerton</button>
-            <button id="papamoa-depot">Papamoa</button>
-            <button id="maleme-depot">Maleme</button>
-          </fieldset>
-          <fieldset id="standby-shifts">
-            <legend>NON-Driving Shifts</legend>
-            <button id="standby-depot"><img src="./standby.svg" width="20"> Standby</button>
-          </fieldset>
 
-          <section id="school-holiday-setting">
-            <label for="school-holiday-switch"
-              >School Holiday</label
-            >
-            <label class="switch">
-              <input type="checkbox" id="school-holiday-switch" />
-              <span class="slider round"></span>
-            </label>
-          </section>
+      <section id="depot-buttons">
+        <label id="tip-top" for="drive-shifts"><strong>Choose a depot to start</strong></label>
+        <fieldset id="drive-shifts">
+          <legend>Driving Shifts</legend>
+          <button id="greerton-depot">Greerton</button>
+          <button id="papamoa-depot">Papamoa</button>
+          <button id="maleme-depot">Maleme</button>
+        </fieldset>
+        <fieldset id="standby-shifts">
+          <legend>NON-Driving Shifts</legend>
+          <button id="standby-depot"><img id="sofaIcon"  src="./standby.svg"> Standby</button>
+        </fieldset>
 
-          <!-- <div id="contact-about-buttons">
+        <section id="school-holiday-setting">
+          <label for="school-holiday-switch">School Holiday</label>
+          <label class="switch">
+            <input type="checkbox" id="school-holiday-switch" />
+            <span class="slider round"></span>
+          </label>
+        </section>
+
+        <!-- <div id="contact-about-buttons">
             <button id="contact-button" class="contact-btn">
               Send Feedback
             </button>
              <button id="about-button" class="about-btn">About</button>
           </div> -->
-        </section>
-      </div>
-      <section id="week-date-selector" style="display: none">
-        <p>Pick a day from your desired week</p>
-        <input type="date" id="week-start-date" />
-        <button id="back-to-depot-selection">Back</button>
-      </section>
-
-      <section id="schedule-week-view" style="display: none">
-        <div id="schedule-table-view-container">
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Date</th>
-                <th>Shift</th>
-                <th>Holiday</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>
-                  <input
-                    id="same-shift-checkbox-sun"
-                    type="checkbox"
-                    class="same-shift-checkbox"
-                  /><label for="same-shift-checkbox-sun">SUN</label>
-                </th>
-                <td></td>
-                <td>
-                  <select class="shift-selector">
-                    <option value="">Select shift</option>
-                    <option value="morning">早班</option>
-                    <option value="afternoon">午班</option>
-                    <option value="evening">晚班</option>
-                    <option value="off">休息</option>
-                  </select>
-                </td>
-                <td>
-                  <label class="switch"
-                    ><input type="checkbox" id="switch-sun" /><span
-                      class="slider round"
-                    ></span
-                  ></label>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <input
-                    id="same-shift-checkbox-mon"
-                    type="checkbox"
-                    class="same-shift-checkbox"
-                  /><label for="same-shift-checkbox-mon">MON</label>
-                </th>
-                <td></td>
-                <td>
-                  <select class="shift-selector">
-                    <option value="">Select shift</option>
-                    <option value="morning">早班</option>
-                    <option value="afternoon">午班</option>
-                    <option value="evening">晚班</option>
-                    <option value="off">休息</option>
-                  </select>
-                </td>
-                <td>
-                  <label
-                    class="switch weekday-holiday-switch weekday-holiday-switch-mon"
-                    ><input type="checkbox" id="switch-mon" /><span
-                      class="slider round"
-                    ></span
-                  ></label>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <input
-                    id="same-shift-checkbox-tue"
-                    type="checkbox"
-                    class="same-shift-checkbox"
-                  /><label for="same-shift-checkbox-tue">TUE</label>
-                </th>
-                <td></td>
-                <td>
-                  <select class="shift-selector">
-                    <option value="">Select shift</option>
-                    <option value="morning">早班</option>
-                    <option value="afternoon">午班</option>
-                    <option value="evening">晚班</option>
-                    <option value="off">休息</option>
-                  </select>
-                </td>
-                <td>
-                  <label
-                    class="switch weekday-holiday-switch weekday-holiday-switch-tue"
-                    ><input type="checkbox" id="switch-tue" /><span
-                      class="slider round"
-                    ></span
-                  ></label>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <input
-                    id="same-shift-checkbox-wed"
-                    type="checkbox"
-                    class="same-shift-checkbox"
-                  /><label for="same-shift-checkbox-wed">WED</label>
-                </th>
-                <td></td>
-                <td>
-                  <select class="shift-selector">
-                    <option value="">Select shift</option>
-                    <option value="morning">早班</option>
-                    <option value="afternoon">午班</option>
-                    <option value="evening">晚班</option>
-                    <option value="off">休息</option>
-                  </select>
-                </td>
-                <td>
-                  <label
-                    class="switch weekday-holiday-switch weekday-holiday-switch-wed"
-                    ><input type="checkbox" id="switch-wed" /><span
-                      class="slider round"
-                    ></span
-                  ></label>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <input
-                    id="same-shift-checkbox-thu"
-                    type="checkbox"
-                    class="same-shift-checkbox"
-                  /><label for="same-shift-checkbox-thu">THU</label>
-                </th>
-                <td></td>
-                <td>
-                  <select class="shift-selector">
-                    <option value="">Select shift</option>
-                    <option value="morning">早班</option>
-                    <option value="afternoon">午班</option>
-                    <option value="evening">晚班</option>
-                    <option value="off">休息</option>
-                  </select>
-                </td>
-                <td>
-                  <label
-                    class="switch weekday-holiday-switch weekday-holiday-switch-thu"
-                    ><input type="checkbox" id="switch-thu" /><span
-                      class="slider round"
-                    ></span
-                  ></label>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <input
-                    id="same-shift-checkbox-fri"
-                    type="checkbox"
-                    class="same-shift-checkbox"
-                  /><label for="same-shift-checkbox-fri">FRI</label>
-                </th>
-                <td></td>
-                <td>
-                  <select class="shift-selector">
-                    <option value="">Select shift</option>
-                    <option value="morning">早班</option>
-                    <option value="afternoon">午班</option>
-                    <option value="evening">晚班</option>
-                    <option value="off">休息</option>
-                  </select>
-                </td>
-                <td>
-                  <label
-                    class="switch weekday-holiday-switch weekday-holiday-switch-fri"
-                    ><input type="checkbox" id="switch-fri" /><span
-                      class="slider round"
-                    ></span
-                  ></label>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <input
-                    id="same-shift-checkbox-sat"
-                    type="checkbox"
-                    class="same-shift-checkbox"
-                  /><label for="same-shift-checkbox-sat">SAT</label>
-                </th>
-                <td></td>
-                <td>
-                  <select class="shift-selector">
-                    <option value="">Select shift</option>
-                    <option value="morning">早班</option>
-                    <option value="afternoon">午班</option>
-                    <option value="evening">晚班</option>
-                    <option value="off">休息</option>
-                  </select>
-                </td>
-                <td>
-                  <label class="switch"
-                    ><input type="checkbox" id="switch-sat" /><span
-                      class="slider round"
-                    ></span
-                  ></label>
-                </td>
-              </tr>
-            </tbody>
-
-            <tbody id="control-row">
-              <tr>
-                <th><button id="toggle-weekdays">A/C</button></th>
-                <td></td>
-                <td><button id="reset-shifts">Reset Shifts</button></td>
-                <td><button id="reset-holidays">Reset</button></td>
-              </tr>
-            </tbody>
-          </table>
-          <button
-            id="add-to-calendar-button"
-            class="depot-button"
-            style="margin-top: 20px"
-          >
-            Add to Calendar
-          </button>
-          <a
-            id="hiddenDownloadLink"
-            style="display: none"
-            download="Schedule.ics"
-          ></a>
-          <button id="back-to-date-selector-button">Back</button>
-        </div>
       </section>
     </div>
-    <script src="./js/lib/papaparse.js"></script>
-    <script src="./js/components/utils.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+    <section id="week-date-selector" style="display: none">
+      <p>Pick a day from your desired week</p>
+      <input type="date" id="week-start-date" />
+      <button id="back-to-depot-selection">Back</button>
+    </section>
+
+    <section id="schedule-week-view" style="display: none">
+      <div id="schedule-table-view-container">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Date</th>
+              <th>Shift</th>
+              <th>Holiday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <input id="same-shift-checkbox-sun" type="checkbox" class="same-shift-checkbox" /><label
+                  for="same-shift-checkbox-sun">SUN</label>
+              </th>
+              <td></td>
+              <td>
+                <select class="shift-selector">
+                  <option value="">Select shift</option>
+                  <option value="morning">早班</option>
+                  <option value="afternoon">午班</option>
+                  <option value="evening">晚班</option>
+                  <option value="off">休息</option>
+                </select>
+              </td>
+              <td>
+                <label class="switch"><input type="checkbox" id="switch-sun" /><span
+                    class="slider round"></span></label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <input id="same-shift-checkbox-mon" type="checkbox" class="same-shift-checkbox" /><label
+                  for="same-shift-checkbox-mon">MON</label>
+              </th>
+              <td></td>
+              <td>
+                <select class="shift-selector">
+                  <option value="">Select shift</option>
+                  <option value="morning">早班</option>
+                  <option value="afternoon">午班</option>
+                  <option value="evening">晚班</option>
+                  <option value="off">休息</option>
+                </select>
+              </td>
+              <td>
+                <label class="switch weekday-holiday-switch weekday-holiday-switch-mon"><input type="checkbox"
+                    id="switch-mon" /><span class="slider round"></span></label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <input id="same-shift-checkbox-tue" type="checkbox" class="same-shift-checkbox" /><label
+                  for="same-shift-checkbox-tue">TUE</label>
+              </th>
+              <td></td>
+              <td>
+                <select class="shift-selector">
+                  <option value="">Select shift</option>
+                  <option value="morning">早班</option>
+                  <option value="afternoon">午班</option>
+                  <option value="evening">晚班</option>
+                  <option value="off">休息</option>
+                </select>
+              </td>
+              <td>
+                <label class="switch weekday-holiday-switch weekday-holiday-switch-tue"><input type="checkbox"
+                    id="switch-tue" /><span class="slider round"></span></label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <input id="same-shift-checkbox-wed" type="checkbox" class="same-shift-checkbox" /><label
+                  for="same-shift-checkbox-wed">WED</label>
+              </th>
+              <td></td>
+              <td>
+                <select class="shift-selector">
+                  <option value="">Select shift</option>
+                  <option value="morning">早班</option>
+                  <option value="afternoon">午班</option>
+                  <option value="evening">晚班</option>
+                  <option value="off">休息</option>
+                </select>
+              </td>
+              <td>
+                <label class="switch weekday-holiday-switch weekday-holiday-switch-wed"><input type="checkbox"
+                    id="switch-wed" /><span class="slider round"></span></label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <input id="same-shift-checkbox-thu" type="checkbox" class="same-shift-checkbox" /><label
+                  for="same-shift-checkbox-thu">THU</label>
+              </th>
+              <td></td>
+              <td>
+                <select class="shift-selector">
+                  <option value="">Select shift</option>
+                  <option value="morning">早班</option>
+                  <option value="afternoon">午班</option>
+                  <option value="evening">晚班</option>
+                  <option value="off">休息</option>
+                </select>
+              </td>
+              <td>
+                <label class="switch weekday-holiday-switch weekday-holiday-switch-thu"><input type="checkbox"
+                    id="switch-thu" /><span class="slider round"></span></label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <input id="same-shift-checkbox-fri" type="checkbox" class="same-shift-checkbox" /><label
+                  for="same-shift-checkbox-fri">FRI</label>
+              </th>
+              <td></td>
+              <td>
+                <select class="shift-selector">
+                  <option value="">Select shift</option>
+                  <option value="morning">早班</option>
+                  <option value="afternoon">午班</option>
+                  <option value="evening">晚班</option>
+                  <option value="off">休息</option>
+                </select>
+              </td>
+              <td>
+                <label class="switch weekday-holiday-switch weekday-holiday-switch-fri"><input type="checkbox"
+                    id="switch-fri" /><span class="slider round"></span></label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <input id="same-shift-checkbox-sat" type="checkbox" class="same-shift-checkbox" /><label
+                  for="same-shift-checkbox-sat">SAT</label>
+              </th>
+              <td></td>
+              <td>
+                <select class="shift-selector">
+                  <option value="">Select shift</option>
+                  <option value="morning">早班</option>
+                  <option value="afternoon">午班</option>
+                  <option value="evening">晚班</option>
+                  <option value="off">休息</option>
+                </select>
+              </td>
+              <td>
+                <label class="switch"><input type="checkbox" id="switch-sat" /><span
+                    class="slider round"></span></label>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody id="control-row">
+            <tr>
+              <th><button id="toggle-weekdays">A/C</button></th>
+              <td></td>
+              <td><button id="reset-shifts">Reset Shifts</button></td>
+              <td><button id="reset-holidays">Reset</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="add-to-calendar-button" class="depot-button">
+          Add to Calendar
+        </button>
+        <a id="hiddenDownloadLink" style="display: none" download="Schedule.ics"></a>
+        <button id="back-to-date-selector-button">Back</button>
+      </div>
+    </section>
+  </div>
+  <script src="./js/lib/papaparse.js"></script>
+  <script src="./js/components/utils.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
