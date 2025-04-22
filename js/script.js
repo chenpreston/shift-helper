@@ -614,7 +614,7 @@ if ("serviceWorker" in navigator) {
             navigator.serviceWorker.controller
           ) {
             
-            if (confirm("A new version SHIFT Helper is available. Refresh to update?")) {
+             {
               newWorker.postMessage({ action: "skipWaiting" });
             }
           }
