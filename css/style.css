@@ -325,3 +325,27 @@ tr.highlight {
 
   
 }
+
+.radient-text {
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b, #36d1dc, #5b86e5);
+  background-size: 200%; /* 背景大小放大以便动画移动 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 30s ease infinite; /* 应用动画 */
+}
+
+/* 定义动画 */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
